@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <form action="">
+
+        <h1>Enquiry</h1>
+
+        <input type="text" name="name" required placeholder="Enter your full name">
+        <input type="text" name="address" required placeholder="Enter your full address">
+
+        <!-- <select name="gender" id="">
+
+            <option value="none" selected disabled>Enter your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+
+        </select>
+     -->
+
+        <div class="radio-container">
+            <span class="sub-heading">
+                Gender :
+            </span>
+            <div class="d-flex">
+                <div>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Male" name="gender">
+                </div>
+
+                <div>
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Female" name="gender">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="radio-container">
+            <span class="sub-heading">
+                Enter Maritual status :
+            </span>
+            <div class="d-flex">
+                <div>
+                    <label for="Married">Married</label>
+                    <input type="radio" name="marritual-status" id="Married">
+                </div>
+                <div>
+                    <label for="Unmarried">UnMarried</label>
+                    <input type="radio" name="marritual-status" id="Unmarried">
+                </div>
+            </div>
+        </div>
+
+        <!-- <select name="marritualStatus" id="">
+
+            <option value="none" selected disabled>Enter your Marritual status</option>
+            <option value="married">Married</option>
+            <option value="unmarried">Unmarried</option>
+
+        </select> -->
+
+        <label>Enter your dob :</label>
+
+        <input type="date" placeholder="Enter your dob">
+        <input type="text" placeholder="Enter your pan no">
+        <input type="text" placeholder="Enter your aadhar no">
+        <input type="number" name="phone_number" required placeholder="Enter your number">
+        <input type="email" name="email" required placeholder="Enter your email">
+
+        <!-- <select name="AcademicQualification" id="">
+
+            <option value="none" selected disabled>Enter your Academic Qualification</option>
+            <option value="graduate">Graduate</option>
+            <option value="underGraduate">Under Graduate</option>
+            <option value="grduateKT">Graduate with Backlog/KT</option>
+
+        </select> -->
+
+        <div class="radio-container">
+            <span class="sub-heading">
+                Academic Qualification :
+            </span>
+            <div class="d-flex">
+                <div>
+                    <label for="Graduate">Graduate</label>
+                    <input type="radio" id="Graduate" value="Graduate" name="Qualification">
+                </div>
+                <div>
+                    <label for="Under-Graduate">Under Graduate</label>
+                    <input type="radio" name="Qualification" value="Under-Graduate" id="Under-Graduate">
+                </div>
+                <div>
+                    <label for="Post-Graduate">Post Graduate</label>
+                    <input type="radio" name="Qualification" value="Post-Graduate" id="Post-Graduate">
+                </div>
+            </div>
+        </div>
+
+        <div class="qualification-container"></div>
+
+
+
+        <label>OTHER QUALIFICATION DETAILS :</label>
+        <input type="text" placeholder="Enter name of school">
+        <input type="text" placeholder="Percentage">
+        <input type="number" placeholder="Year of passing">
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
